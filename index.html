@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="flappybird.css">
+    <script src="flappybird.js" defer></script>
+</head>
+<body>
+    <canvas id="board"></canvas>
+
+    <!-- Start/Restart Button -->
+    <img id="tapBtn" src="tap-button.png" alt="Tap to Start/Restart">
+
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" style="display: none;">
+        <div class="modal-content">
+            <h2>FlappyBird Made By Yash </h2>
+            <h2>Game Over</h2>
+            <p>Your Score: <span id="finalScore"></span></p>
+            <button id="restartBtn">Restart</button>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" src="background-music.mp3"></audio>
+</body>
+</html>
